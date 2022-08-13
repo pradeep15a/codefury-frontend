@@ -1,0 +1,55 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);;
+
+.contact-main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact-form-container {
+    width: 50%;
+    align-self: center;
+    margin: 70px 0;
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.input-box {
+    background-color: #fff;
+    width: 100%;
+    border: 1px solid #eaeaea;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 2px rgba(0,0,0, 0.25);
+    border-radius: 35px;
+    padding: 19px 35px;
+    margin: 10px 0;
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 16px;
+}
+.body-input {
+    height: 250px;
+    padding: 25px 35px ;
+}
+
+.contact-btn{
+    margin: 10px 0;
+    border: none;
+    color: #000;
+    font-weight: bold;
+    font-family: Poppins;
+    letter-spacing: 2px;
+    font-size: 18px;
+    line-height: 16px;
+    width: 100%;
+    text-align: center;
+    padding: 17px 35px;
+    background: linear-gradient(39.97deg, #addd83 0.79%, #b7b3b3 79.29%);
+    border-radius: 35px;
+    text-transform: uppercase;
+}
+

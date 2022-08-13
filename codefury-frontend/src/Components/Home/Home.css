@@ -1,0 +1,76 @@
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h3 {
+    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Rajdhani', sans-serif;
+    font-family: 'Sansita Swashed', cursive;
+    font-family: 'Shippori Antique B1', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 30px;
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#primary-content {
+    display: flex;
+    
+    background-color: #f8fafa;
+    padding: 60px 0;
+    text-align: center;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+#primary-content h3 {
+    display: block;
+    margin: 0 auto 20px auto;
+    width: 400px;
+    border-bottom: 1px solid #02b8dd;
+    padding: 0 0 20px 0;
+}
+
+#primary-content img {
+    margin: 10px 0;
+    border-radius: 20px;
+}
+
+#cta {
+    padding: 60px 0;
+    text-align: center;
+}
+
+#cta h3 {
+    display: block;
+    margin: 0 auto 20px auto;
+    width: 400px;
+    border-bottom: 1px solid #02b8dd;
+    padding: 0 0 20px 0;
+}
+
+.wrapper button {
+    /* display: inline; */
+    position: relative;
+    margin: 0 15px 0 15px;
+    border: 2px solid #02b8dd;
+    color: #02b8dd;
+    border-radius: 5px;
+    font-size: 20px;
+    gap: 15px;
+    padding: 10px;
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+}
+
+.wrapper button:hover {
+    background-color: #02b8dd;
+    color: #fff;
+}
