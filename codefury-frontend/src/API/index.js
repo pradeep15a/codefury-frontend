@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API = axios.create({ baseURL: 'http://localhost:5000' });
+const API = axios.create({ baseURL: 'https://codefury5-backend.herokuapp.com/' });
 
 export const createProject = (newProject) => API.post('/projects', newProject);
 export const fetchProjects = () => API.get('/projects');
