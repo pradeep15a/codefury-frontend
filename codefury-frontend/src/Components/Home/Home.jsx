@@ -14,7 +14,7 @@ const Home = () => {
         navigate('/idea')
     }
     const handleInvest = () => {
-        navigate('/about')
+        navigate('/auth')
     }
 
     return (
