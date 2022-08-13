@@ -17,6 +17,9 @@ const  Navbar = () => {
         navigate('/');
         setUser(null);
     }
+    const handleLogin = () => {
+        navigate('/auth');
+    }
     
 
     const homeClass = location.pathname === '/home' ? 'active-item' : ' ';
@@ -30,8 +33,9 @@ const  Navbar = () => {
       <Link className={`menu-item ${projectsClass}`} to="projects">Project Ideas</Link>
       <Link className={`menu-item ${contactClass}`} to="contact">Contact</Link>
       {
-        user && 
-        <button className='menu-item' onClick={handleLogout}>Logout</button>
+        user ?
+        <button className='menu-item logbtn' onClick={handleLogout}>Logout</button> :
+        <button className='menu-item logbtn' onClick={handleLogin}>Login</button> 
       }
     </Menu>
   );

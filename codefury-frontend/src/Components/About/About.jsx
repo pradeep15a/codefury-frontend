@@ -1,85 +1,101 @@
 import React from 'react'
 import Header from '../Header/Header'
-import about1 from '../../images/main.png';
+import dp from '../../images/dp.jpg';
+import './About.css';
 
 export default function About() {
   return (
-    <div>
-        <Header 
-            heading="About "
-            details=""
-        />
-        <div class="w3-content" style="max-width:1100px">
+    <div className="about-container">
 
-<div class="w3-row w3-padding-64" id="about">
-  <div class="w3-col m6 w3-padding-large w3-hide-small">
-   <img src={about1} class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="600" height="750"></img>
-  </div>
+      <Header
+        heading="About "
+        details="More About Us"
+      />
+      <h2>Meet the team!!!</h2>
+      <div class="contact-container-row">
+        <div class="card">
+          <div class="imgbox">
+            <img src={dp} alt="pradeep" />
+          </div>
+          <div class="content">
+            <div class="details">
+              <h2>Pradeep<br/><span>Full Stack Developer</span></h2>
+              <div class="data">
+                <h2>7<br /><span>Posts</span></h2>
+                <h2>366<br /><span>Followers</span></h2>
+                <h2>403<br /><span>Following</span></h2>
+              </div>
+              <div class="actions">
+                <a href="http://instagram.com/pradeeee_p" target="_blank">Follow</a>
+                <a href="mailto:pradeepashok1122@gmail.com" target="_blank">E-Mail</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="imgbox">
+            <img src={dp} alt="pradeep" />
+          </div>
+          <div class="content">
+            <div class="details">
+              <h2>Sinchana M<br /><span>2nd year cse</span></h2>
+              <div class="data">
+                <h2>6<br /><span>Posts</span></h2>
+                <h2>386<br /><span>Followers</span></h2>
+                <h2>380<br /><span>Following</span></h2>
+              </div>
+              <div class="actions">
+                <a href="http://instagram.com/sinchana.m.hebbar" target="_blank">Follow</a>
+                <a href="mailto:sinchana17062002@gmail.com" target="_blank">E-Mail</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="contact-container-row">
+        <div class="card">
+          <div class="imgbox">
+            <img src={dp} alt="pradeep" />
+          </div>
+          <div class="content">
+            <div class="details">
+              <h2>Ananya R Bongale<br /><span>2nd Year ISE</span></h2>
+              <div class="data">
+                <h2>5<br /><span>Posts</span></h2>
+                <h2>448<br /><span>Followers</span></h2>
+                <h2>512<br /><span>Following</span></h2>
+              </div>
+              <div class="actions">
+                <a href="http://instagram.com/ananya_bongale" target="_blank">Follow</a>
+                <a href="mailto:ananyabongaler@gmail.com" target="_blank">E-Mail</a>
+              </div>
+            </div>
+          </div>
+        </div>
 
-  <div class="w3-col m6 w3-padding-large">
-    <h1 class="w3-center">About </h1>
-    <h5>“Don’t worry about failure; you only have to be right once.</h5>
-    <p class="w3-large">When you’re thinking about starting a company or first in the entrepreneurial trenches, any nugget of advice you can get from someone who’s been there before is like gold.
 
-      But as time goes on, you’ll realize that some of those tips are better—and more applicable to your business—than others.Trusting your business performance to a partner isn’t easy. We earn that trust through results. We have earned hundreds of awards for our work through the years. Your success is our success.</p>
-    <p class="w3-large w3-text-grey w3-hide-medium">We train our founders on how to succeed quickly. Our program provides access to foreign markets through India’s Free Trade Agreements. Our team will match you with like-minded, passionate investors. Our startups consistently raise more than $250K+ in funding.We provide a variety of solutions that help you prepare your pitch. Our team works closely with you to and ensure it is effective and persuasive.</p>
-  </div>
-</div>
 
-  <h2>Meet the team!!!</h2>
-<div class="row">
-  <div class="column">
-    <div class="card">
-      <div class="container">
-        <h2>Pradeep</h2>
-        <p class="title">2nd year CSE</p>
-        <p>University Visveswaraya College of Engineering</p>
-        <p>pradeepashok1122@gmail.com</p>
-        <p><button class="button">Contact</button></p>
+
+        <div class="card">
+          <div class="imgbox">
+            <img src={dp} alt="pradeep" />
+          </div>
+          <div class="content">
+            <div class="details">
+              <h2>Anand K<br /><span>2nd year CSE</span></h2>
+              <div class="data">
+                <h2>5<br /><span>Posts</span></h2>
+                <h2>1077<br /><span>Followers</span></h2>
+                <h2>909<br /><span>Following</span></h2>
+              </div>
+              <div class="actions">
+                <a href="http://instagram.com/_anand__298" target="_blank">Follow</a>
+                <a href="mailto:anandkuppur@gmail.com" target="_blank">E-Mail</a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="column">
-    <div class="card">
-       <div class="container">
-        <h2>Sinchana M</h2>
-        <p class="title">2nd year CSE</p>
-        <p>University Visveswaraya College of Engineering</p>
-        <p>sinchana17062002@gmail.com</p>
-        <p><button class="button">Contact</button></p>
-      </div>
-    </div>
-  </div>
-
-  <div class="column">
-    <div class="card">
-      
-      <div class="container">
-        <h2>Ananya</h2>
-        <p class="title">2nd year ISE</p>
-        <p>University Visveswaraya College of Engineering</p>
-        <p>ananyabongaler@gmail.com</p>
-        <p><button class="button">Contact</button></p>
-      </div>
-    </div>
-  </div>
-
-
-<div class="column">
-  <div class="card">
-   
-    <div class="container">
-      <h2>Anand K</h2>
-      <p class="title">2nd year CSE</p>
-      <p>University Visveswaraya College of Engineering</p>
-      <p>anandkkuppur@gmail.com</p>
-      <p><button class="button">Contact</button></p>
-    </div>
-  </div>
-</div>
-</div>
-</div>
-        
-    </div>
-  )
+  );
 }

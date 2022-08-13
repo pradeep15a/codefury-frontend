@@ -79,11 +79,12 @@
   font-size: 16px;
   transition: all 0.3s ease;
 }
-.row #button{
+.row button{
  background-color: #365d7c;
  color: whitesmoke;
  cursor: pointer;
  font-size: 20px;
+ text-transform: uppercase;
 }
 form .row input:focus{
   border-color: #16a085;
@@ -92,17 +93,33 @@ form .row input:focus{
 form .row input::placeholder{
   color:grey;
 }
-.wrapper-1 form .button input{
-  color: #fff;
+.wrapper-1 form button {
+  color: #000;
+  width: 100%;
+  height: 100%;
   font-size: 20px;
   font-weight: 500;
   padding-left: 0px;
-  background: #16a085;
+  background: #fff;
   border: 1px solid #16a085;
   cursor: pointer;
+  border-radius: 10px;
+  transition: all 0.5s;
 }
-form .button input:hover{
+form button:hover{
   background: #12876f;
+  color: #fff;
+}
+
+#handle {
+  border : none ;
+  background: #16a085;
+  color: #fff;
+}
+#handle:hover {
+  background: none;
+  color: #000;
+  border: 2px solid #12876f;
 }
 .row textarea {
     width: 100%;

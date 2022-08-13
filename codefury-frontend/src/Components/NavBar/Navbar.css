@@ -76,6 +76,10 @@
     visibility: visible;
     height: 3px;
 }
+.logbtn {
+    background: transparent;
+    border: none;
+}
 
 @media only screen and (max-width: 640px) {
     .bm-burger-button

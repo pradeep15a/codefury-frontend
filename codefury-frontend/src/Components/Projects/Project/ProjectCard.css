@@ -1,0 +1,83 @@
+
+.project-card {
+    width: 375px;
+    min-height: 280px;
+    background: #fff;
+    box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    transition: all 0.35s ;
+}
+
+.project-card:hover {
+    box-shadow: 0px 40px 50px rgba(0,0,0, 0.4);
+}
+
+.project-external-link {
+    border-radius: inherit;
+}
+
+.project-details-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.project-num {
+    font-weight: 600;
+    padding: 0 0 10px 0 ;
+    color: #4089ed;
+}
+.project-num  a {
+    font-weight: 600;
+    padding: 0 0 10px 0 ;
+    color: #4089ed;
+}
+.project-mail {
+    font-weight: 600;
+    color: #DD5144;
+}
+.project-mail a{
+    font-weight: 600;
+    color: #DD5144;
+}
+.project-heading{
+    margin: 0;
+}
+.project-details {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 28px;
+    color: #7d7987;
+}
+
+.project-details-container button {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ff8aed;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+    font-size: 16px;
+    background: #fff;
+}
+.project-details-container button:hover {
+    background: #ff8aed;
+    color: #fff;
+}
+
+
+
+@media only screen and (max-width: 640px){
+    .project-cards-container {
+        padding: 20px;
+    }
+
+    .project-card {
+        width: 290px;
+        min-height: 500px;
+    }
+}

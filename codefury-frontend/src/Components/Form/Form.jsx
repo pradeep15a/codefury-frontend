@@ -1,46 +1,72 @@
 import React, { useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
+import { createProject } from '../../Actions/projects';
 import './Form.css';
 
-const initialProjectData = { clientName : '', amount : 0, domain: 0, description : '', clientEmail : '' ,contact : 0 };
+const initialProjectData = { clientName : ' ', domain: ' ', description : ' ', clientEmail : ' ' ,contact : 0, projectValue : 0};
 
 export default function Form() {
+    const dispatch = useDispatch();
+    const navigate = useNavigate();
+    const [projectData, setProjectData] = useState(initialProjectData); 
+
+    const handleChange = (e) => {
+        setProjectData({ ...projectData, [e.target.name] : e.target.value });
+    }
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        // console.log(projectData);
+        dispatch(createProject({ ...projectData }));
+        clear();
+    }
+
+    const clear = () => {
+        setProjectData(initialProjectData);
+    }
+    const handleRedirect = () => {
+        navigate('/projects');
+    }
+
   return (
     <div className="main-form-container">
-        <div class="container">
-        <div class="wrapper-1">
-            <div class="heading">
+        <div className="container">
+        <div className="wrapper-1">
+            <div className="heading">
                 <h2>Project Idea</h2>
             </div>
-            <form action="#">
-                <div class="row">
-                    <input type="text" name="clientName" placeholder="Name*" required />
+            <form onSubmit={handleSubmit}>
+                <div className="row">
+                    <input type="text"  name="clientName" placeholder="Name*" required onChange={handleChange} />
                 </div>
-                <div class="row">
-                    <input type="number" name="amount" placeholder="Amount*" required />
-                </div>
-                <div class="row">
-                    <select name="Domain" id="domain">
-                        <option value="8" selected>Start up domain</option>
-                        <option value="1">Medical</option>
-                        <option value="2">Education</option>
-                        <option value="3">E Commerce</option>
-                        <option value="4">IT Industry</option>
-                        <option value="5">Banking</option>
-                        <option value="6">Manufacturing</option>
-                        <option value="7">Online services and marketing</option>
+                <div className="row">
+                    <select name="domain" id="domain" onChange={handleChange} >
+                        <option value="Medical">Medical</option>
+                        <option value="Education" selected>Education</option>
+                        <option value="E Commerce">E Commerce</option>
+                        <option value="IT Industry">IT Industry</option>
+                        <option value="Banking">Banking</option>
+                        <option value="Manufacturing">Manufacturing</option>
+                        <option value="Online Services">Online services and marketing</option>
                     </select>
                 </div>
                 <div className="row">
-                    <textarea name="description"  placeholder="Project Description" required />
+                    <textarea name="description"  placeholder="Project Description" required onChange={handleChange} />
                 </div>
-                <div class="row" id="mail">
-                    <input type="email" name="clientEmail" placeholder="Email*" required />
+                <div className="row" id="mail">
+                    <input type="email" name="clientEmail" placeholder="Email*" required onChange={handleChange} />
                 </div>
-                <div class="row">
-                    <input type="text" name="contact" placeholder="Phone number*" required />
+                <div className="row">
+                    <input type="number" name="contact" placeholder="Phone number*" required onChange={handleChange} />
                 </div>
-                <div class="row">
-                    <input type="submit" value="Submit" id="button" />
+                <div className="row">
+                    <input type="number" name="projectValue" placeholder="Project value*" required onChange={handleChange} />
+                </div>
+                <div className="row">
+                    <button type='submit'>Submit</button>
+                </div>
+                <div className="row">
+                    <button id='handle' onClick={handleRedirect}>Go To Projects</button>
                 </div>
             </form>
         </div>
