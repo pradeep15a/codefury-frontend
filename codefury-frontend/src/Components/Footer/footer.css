@@ -1,18 +1,13 @@
-footer {
-    padding: 60px 0;
-    background-color: #f8fafa;
+.footer {
+    display: flex;
+    justify-content: flex-start;
+    margin: 20px 0 10px 0;
+    background-color: #949696;
+    width: 100%;
 }
-#footer-info {
-    width: 380px;
-    float: left;
-    margin-top: 10px;
-}
-#footer-links {
-    width: 520px;
-    float: right;
-}
-#footer-links ul {
-    width: 150px;
-    float: left;
-    margin-left: 20px;
+@media only screen and (max-width: 500px){
+    .footer {
+        width: 100%;
+        justify-content: center;
+    }
 }

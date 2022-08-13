@@ -1,76 +1,118 @@
-.header {
+.main-container {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
-
-h3 {
-    font-family: 'Fira Sans', sans-serif;
-    font-family: 'Oswald', sans-serif;
-    font-family: 'Playfair Display', serif;
-    font-family: 'Rajdhani', sans-serif;
-    font-family: 'Sansita Swashed', cursive;
-    font-family: 'Shippori Antique B1', sans-serif;
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 30px;
-    color: black;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-#primary-content {
-    display: flex;
-    
-    background-color: #f8fafa;
-    padding: 60px 0;
-    text-align: center;
-    margin-right: 50px;
-    margin-left: 50px;
-}
-
-#primary-content h3 {
-    display: block;
-    margin: 0 auto 20px auto;
-    width: 400px;
-    border-bottom: 1px solid #02b8dd;
-    padding: 0 0 20px 0;
-}
-
-#primary-content img {
-    margin: 10px 0;
-    border-radius: 20px;
-}
-
-#cta {
-    padding: 60px 0;
-    text-align: center;
-}
-
-#cta h3 {
-    display: block;
-    margin: 0 auto 20px auto;
-    width: 400px;
-    border-bottom: 1px solid #02b8dd;
-    padding: 0 0 20px 0;
-}
-
-.wrapper button {
-    /* display: inline; */
+ #primary-content .wrapper{
     position: relative;
-    margin: 0 15px 0 15px;
-    border: 2px solid #02b8dd;
-    color: #02b8dd;
-    border-radius: 5px;
-    font-size: 20px;
-    gap: 15px;
-    padding: 10px;
-    text-decoration: none;
-    transition: all 0.5s ease-in-out;
-}
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
 
-.wrapper button:hover {
-    background-color: #02b8dd;
+ #primary-content .wrapper h3 {
+    text-align: center;
+    font-size: 2em;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: Montserrat;
+    margin: 20px 0 18px 0;
+ }
+
+ #primary-content .wrapper .matter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    padding: 20px 26px 15px 26px;
+ }
+
+ #primary-content .wrapper .matter p{
+    position: relative;
+    font-size: 18px;
+ }
+ #primary-content .wrapper .matter img{
+    position: relative;
+    height: 350px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+ }
+
+ #cta {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background: aliceblue;
+    width: 100%;
+    height :200px;
+ }
+
+ #cta h3{
+    font-size: 2em;
+    margin: 0;
+    font-weight: 700;
+ }
+
+ #cta p{
+    margin: 0;
+    padding: 8px;
+ }
+
+ #cta .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap : 85px;
+    margin : 15px 0 0 0 ;
+ }
+ #cta .btn button {
+    padding: 12px;
+    width : 180px;
+    border: 2px solid #2396f4;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: all 0.5s ease;
+ }
+
+ #cta .btn button:hover {
     color: #fff;
-}
+    background: #2396f4;
+ }
+
+ #cta .btn button:nth-child(2) {
+    background: #2396f4;
+    color: #fff;
+ }
+ #cta .btn button:nth-child(2):hover{
+    background: #fff;
+    color : #2396f4;
+    border: none;
+ }
+
+ @media only screen and (max-width: 800px){
+    #primary-content .wrapper .matter{
+        flex-direction: column-reverse;
+    }
+    #primary-content .wrapper .matter img{
+        height: 300px;
+    }
+    #cta {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+        height: 300px;
+        width: 100%;
+        align-self: center;
+    }
+    #cta .btn {
+        flex-direction: column;
+        gap : 10px;
+    }
+ }
