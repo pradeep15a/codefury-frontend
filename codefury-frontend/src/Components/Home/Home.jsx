@@ -5,6 +5,7 @@ import './Home.css';
 import f1 from '../../images/f1.jpeg';
 import g2 from '../../images/g2.png';
 import support from '../../images/support.png'
+import Footer from '../Footer/footer';
 
 const Home = () => {
     const navigate = useNavigate();
@@ -71,6 +72,7 @@ Our sales reps are provided with the best sales strategies that will help your p
         </div>
     </div>
 
+    <Footer />
     </div>
   )
 }
