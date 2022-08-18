@@ -1,5 +1,6 @@
 import React,{ useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import moment from 'moment';
 import './ProjectCard.css';
 
 const ProjectCard = ( {
@@ -20,6 +21,7 @@ const ProjectCard = ( {
                 <p className="project-details">Funding Required : {project.projectValue}</p>
                 <p className="project-num">Contact Number :<a href={`tel:${project.contact}`}>{project.contact}</a></p>
                 <p className="project-mail">Client email : <a href={`mailto:${project.clientEmail}`}>{project.clientEmail}</a> </p>
+                <p className="project-heading date">Presented : {moment(project.postedAt).fromNow()}</p>
                 {
                     user &&
                     <button onClick={handleInvest}>{invested ? 'Interested' : 'Interested to invest'}</button> 

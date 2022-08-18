@@ -68,7 +68,9 @@
     background: #ff8aed;
     color: #fff;
 }
-
+.date {
+    margin-bottom: 5px;
+}
 
 
 @media only screen and (max-width: 640px){
